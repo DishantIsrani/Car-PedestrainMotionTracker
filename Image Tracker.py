@@ -1,16 +1,16 @@
 import cv2
 
 #our image and video
-image_file = 'project/images.jfif'
-# image_file = 'project/images (2).jfif'
-# image_file = 'project/images (3).jfif'
-# image_file = 'project/images (4).jfif'
+image_file = 'Car-PedestrianMotionTracker/images.jfif'
+# image_file = 'Car-PedestrianMotionTracker/images (2).jfif'
+# image_file = 'Car-PedestrianMotionTracker/images (3).jfif'
+# image_file = 'Car-PedestrianMotionTracker/images (4).jfif'
 
 
 
 # Our pre-trained car classifier
 # use the ml trained xml file
-classifier_file = 'project/car.xml'
+classifier_file = 'Car-PedestrianMotionTracker/car.xml'
 
 
 # create opencv image
