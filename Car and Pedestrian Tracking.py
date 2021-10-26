@@ -1,13 +1,13 @@
 import cv2
 
 #our image and video
-image_file = 'Car-PedestrianMotionTracker/images.jfif'
-Video = cv2.VideoCapture('Car-PedestrianMotionTracker/carTraffic2.mp4')
+image_file = './static/images.jfif'
+Video = cv2.VideoCapture('./static/carTraffic2.mp4')
 
 # Our pre-trained car and pedestrains classifier
 # use the ml trained xml file
-car_classifier_file = 'Car-PedestrianMotionTracker/car.xml'
-pedestrains_classifier_file = 'Car-PedestrianMotionTracker/human.xml'
+car_classifier_file = './xml/car.xml'
+pedestrains_classifier_file = './xml/human.xml'
 
 # create car classifier
 car_tracker = cv2.CascadeClassifier(car_classifier_file)
@@ -69,4 +69,4 @@ for(x, y, w, h) in car_detector:
     cv2.rectangle(img,(x,y), (x+w, y+h), (0, 0, 255), 2)
 
 
-print("Code Completed")
+print("Working")

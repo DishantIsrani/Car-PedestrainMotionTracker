@@ -1,16 +1,16 @@
 import cv2
 
 #our image and video
-image_file = 'Car-PedestrianMotionTracker/images.jfif'
-# image_file = 'Car-PedestrianMotionTracker/images (2).jfif'
-# image_file = 'Car-PedestrianMotionTracker/images (3).jfif'
-# image_file = 'Car-PedestrianMotionTracker/images (4).jfif'
+image_file = './static/images.jfif'
+# image_file = './static/images 2.jfif'
+# image_file = './static/images 3.jfif'
+# image_file = './static/images 4.jfif'
 
 
 
 # Our pre-trained car classifier
 # use the ml trained xml file
-classifier_file = 'Car-PedestrianMotionTracker/car.xml'
+classifier_file = './xml/car.xml'
 
 
 # create opencv image
@@ -42,4 +42,4 @@ cv2.imshow('Dishant Israni Car Detector', img)
 #Dont autoclose (wait here in the code and listen for a keypress)
 cv2.waitKey()
 
-print("Code Completed")
+print("Working")
